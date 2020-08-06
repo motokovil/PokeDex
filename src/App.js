@@ -465,7 +465,7 @@ export default function App(){
 
   return (
     <div className="container">
-      <header><h1>PokeDesk</h1></header>
+      <header><h1>PokeDex</h1></header>
       <div className="filters">
         <h3>Type:</h3>
         <select onChange={changeType}>
