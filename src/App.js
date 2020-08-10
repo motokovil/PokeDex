@@ -4,7 +4,7 @@ import './App.css';
 
 export default function App(){
 
-  const [pokemons, setPokemons] = useState({
+  const [pokemons] = useState({
     types: ["Grass", "Poison", "Fire", "Water", "Flying", "Bug"],
     pokemon: [{
       "id": 1,
@@ -440,9 +440,9 @@ export default function App(){
   })
   const [type,setType] = useState('All')
   const [search,setSearch] = useState('')
-  const [results, setResults] = useState(pokemons.pokemon)
+  const [results] = useState(pokemons.pokemon)
   const [find, setFind] = useState('')
-
+  
   let changeType = (e) => {setType(e.target.value)}
 
   let searchPoke = (event) => {
